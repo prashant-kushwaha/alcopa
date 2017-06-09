@@ -1,0 +1,33 @@
+# ImpEx for Importing Product Media into Merchandise store
+
+# Macros / Replacement Parameter definitions
+$productCatalog=alcopaProductCatalog
+$storeName=hybris
+
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog]
+$media=@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator]
+$thumbnail=thumbnail(code, $catalogVersion)
+$picture=picture(code, $catalogVersion)
+$thumbnails=thumbnails(code, $catalogVersion)
+$detail=detail(code, $catalogVersion)
+$normal=normal(code, $catalogVersion)
+$others=others(code, $catalogVersion)
+$data_sheet=data_sheet(code, $catalogVersion)
+$medias=medias(code, $catalogVersion)
+$galleryImages=galleryImages(qualifier, $catalogVersion)
+$siteResource=jar:com.alcopa.initialdata.setup.InitialDataSystemSetup&/alcopainitialdata/import/sampledata/productCatalogs/$productCatalog/images
+
+INSERT_UPDATE MediaFolder;qualifier[unique=true];path[unique=true]
+;images;images
+
+# Create Media
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpg'];$catalogVersion;folder(qualifier)
+
+
+
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+
+
+# Update Products with Media and Media Containers
+INSERT_UPDATE Product;code[unique=true];$catalogVersion;$galleryImages;$picture;$thumbnail

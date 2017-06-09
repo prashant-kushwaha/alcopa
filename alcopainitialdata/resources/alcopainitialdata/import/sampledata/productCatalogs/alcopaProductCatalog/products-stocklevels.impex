@@ -1,0 +1,19 @@
+# Macros / Replacement Parameter definitions
+$baseStoreUID=alcopa
+$warehouseCode=warehousealcopa
+$defaultPassword=1234
+$passwordEncoding=md5
+$setDefaultPassword=@password[translator=de.hybris.platform.impex.jalo.translators.ConvertPlaintextToEncodedUserPasswordTranslator][default='$passwordEncoding:$defaultPassword']
+$standardHours=alcopa-ireland-standard-hours
+$specialHours=alcopa-ireland-special-hours
+$productCatalog=alcopaProductCatalog
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default='$productCatalog:Staged']
+
+INSERT_UPDATE Warehouse;code[unique=true];name;vendor(code)[default=default];default[default=true];
+;warehousealcopa;alcopa warehouse;;;
+
+INSERT_UPDATE StockLevel;productCode[unique=true];warehouse(code)[default='warehousealcopa',unique=true];inStockStatus(code)[default='forceInStock'];
+;1000;;;
+
+
+

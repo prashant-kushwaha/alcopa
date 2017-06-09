@@ -1,0 +1,31 @@
+# -----------------------------------------------------------------------
+# [y] hybris Platform
+#
+# Copyright (c) 2017 SAP SE or an SAP affiliate company.  All rights reserved.
+#
+# This software is the confidential and proprietary information of SAP
+# ("Confidential Information"). You shall not disclose such Confidential
+# Information and shall use it only in accordance with the terms of the
+# license agreement you entered into with SAP.
+# -----------------------------------------------------------------------
+# ImpEx for Importing Products
+
+# Macros / Replacement Parameter definitions
+$productCatalog=alcopaProductCatalog
+
+
+INSERT_UPDATE Unit;unitType[unique=true];code[unique=true];name[lang=en];conversion;;;
+;car;car;car;1
+
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+$supercategories=supercategories(code, $catalogVersion)
+$baseProduct=baseProduct(code,$catalogVersion)
+$approved=approvalstatus(code)[default='approved']
+$taxGroup=Europe1PriceFactory_PTG(code)[default=eu-vat-full]
+$lang=en
+
+# Insert Products
+INSERT_UPDATE AlcopaCarProduct;code[unique=true];$supercategories;unit(code);color;version;model;engine;type;name[lang=$lang];summary[lang=$lang];description[lang=$lang];;$taxGroup;;$catalogVersion;$approved
+;1000;100;car;Red;Sports;i10;1.0i – MT 5;new;i10 car;"New i10 car";"New i10 car";
+
+
