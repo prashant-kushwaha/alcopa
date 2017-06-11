@@ -8,7 +8,7 @@
 # Information and shall use it only in accordance with the terms of the
 # license agreement you entered into with SAP.
 # -----------------------------------------------------------------------
-# ImpEx for Importing Products
+# ImpEx for Importing Products 
 
 # Macros / Replacement Parameter definitions
 $productCatalog=alcopaProductCatalog

@@ -10,7 +10,7 @@
 # -----------------------------------------------------------------------
 # ImpEx for Importing Prices
 
-# Macros / Replacement Parameter definitions
+# Macros / Replacement Parameter definitions 
 
 $prices=Europe1prices[translator=de.hybris.platform.europe1.jalo.impex.Europe1PricesTranslator]
 
