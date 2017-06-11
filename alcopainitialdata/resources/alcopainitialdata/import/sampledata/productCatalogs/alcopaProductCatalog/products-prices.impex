@@ -24,5 +24,46 @@ $catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[defa
 
 INSERT_UPDATE PriceRow;product(code,$catalogVersion)[unique=true];price;unit(code);minQtd;unitFactor;currency(isocode)[unique=true];$catalogVersion;
 
-;1000;11001;car;1;1;EUR;;
+;1000;19.01;car;1;1;EUR;;
+;1001;19.02;car;1;1;EUR;;
+;1002;29.03;car;1;1;EUR;;
+;1003;28.04;car;1;1;EUR;;
+;1004;20.05;car;1;1;EUR;;
+;1005;28.06;car;1;1;EUR;;
+;1006;29.07;car;1;1;EUR;;
+;1007;27.08;car;1;1;EUR;;
+;1008;22.09;car;1;1;EUR;;
+;1009;25.10;car;1;1;EUR;;
+;1010;21.01;car;1;1;EUR;;
+;1011;20.01;car;1;1;EUR;;
+;1012;19.02;car;1;1;EUR;;
+;1013;25.02;car;1;1;EUR;;
+;1014;29.03;car;1;1;EUR;;
+;1015;24.03;car;1;1;EUR;;
+;1016;28.04;car;1;1;EUR;;
+;1017;28.04;car;1;1;EUR;;
+;1018;26.05;car;1;1;EUR;;
+;1019;26.05;car;1;1;EUR;;
+;1020;22.06;car;1;1;EUR;;
+;1021;28.06;car;1;1;EUR;;
+;1022;29.07;car;1;1;EUR;;
+;1023;25.07;car;1;1;EUR;;
+;1024;27.08;car;1;1;EUR;;
+;1025;27.08;car;1;1;EUR;;
+;1026;22.09;car;1;1;EUR;;
+;1027;26.09;car;1;1;EUR;;
+;1028;25.10;car;1;1;EUR;;
+;1029;20.10;car;1;1;EUR;;
+;1030;28.06;car;1;1;EUR;;
+;1031;28.06;car;1;1;EUR;;
+;1032;29.07;car;1;1;EUR;;
+;1033;25.07;car;1;1;EUR;;
+;1034;27.08;car;1;1;EUR;;
+;1035;27.08;car;1;1;EUR;;
+;1036;22.09;car;1;1;EUR;;
+;1037;26.09;car;1;1;EUR;;
+;1038;25.10;car;1;1;EUR;;
+;1039;20.10;car;1;1;EUR;;
+;1040;20.10;car;1;1;EUR;;
+
 
