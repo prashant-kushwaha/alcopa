@@ -32,4 +32,35 @@
 				</table>
 		</c:forEach>
 	</c:if>
+	
+	<table class="table">
+			<tbody>
+				<tr>
+					<td class="attrib">Color</td>
+					<td>${product.color}</td>
+					
+				</tr>
+				<tr>
+					<td class="attrib">Version</td>
+					<td>${product.version}</td>
+					
+				</tr>
+				<tr>
+					<td class="attrib">Model</td>
+					<td>${product.model}</td>
+					
+				</tr>
+				<tr>
+					<td class="attrib">Engine</td>
+					<td>${product.engine}</td>
+					
+				</tr>
+				<tr>
+					<td class="attrib">Type</td>
+					<td>${product.type}</td>
+					
+				</tr>
+			</tbody>
+		</table>
+		
 </div>

@@ -82,11 +82,7 @@
 		<property name="genderConverter" ref="genderConverter"/>
 	</bean>
 
-	<!-- Add the apparelProductPopulator to the productConverter -->
-	<bean parent="modifyPopulatorList">
-		<property name="list" ref="productConverter"/>
-		<property name="add" ref="apparelProductPopulator"/>
-	</bean>
+	
 
 	<!-- accelerator Image Format Mappings -->
 	<alias name="acceleratorImageFormatMapping" alias="imageFormatMapping"/>
@@ -185,4 +181,12 @@
 	</bean>
 
 	<bean id="genderData" class="com.alcopa.facades.product.data.GenderData" scope="prototype"/>
+	
+	<bean id="alcopaProductPopulator" class="com.alcopa.facades.populators.AlcopaProductPopulator" />
+	
+	<!-- Add the alcopa product populator to the productConverter -->
+	<bean parent="modifyPopulatorList">
+		<property name="list" ref="productConverter"/>
+		<property name="add" ref="alcopaProductPopulator"/>
+	</bean>
 </beans>
