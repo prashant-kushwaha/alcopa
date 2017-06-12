@@ -157,7 +157,7 @@ SELECT DISTINCT tbl.pk, tbl.code FROM (
 			}}
 		)
 	}}
-) tbl WHERE tbl.varianttype IS NULL AND tbl.code NOT IN({{ SELECT {code} FROM {GenericVariantProduct} }}) ORDER BY tbl.code
+) tbl WHERE tbl.code NOT IN({{ SELECT {code} FROM {GenericVariantProduct} }}) ORDER BY tbl.code
 ";anonymous
 
 # Define the available sorts
