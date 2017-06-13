@@ -208,7 +208,12 @@ INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default
 ;65Wx65H;/65Wx65H/xlv.png;$siteResource/65Wx65H/xlv.png;;;images
 ;30Wx30H;/30Wx30H/xlv.png;$siteResource/30Wx30H/xlv.png;;;images
 
-
+;1200Wx1200H;/1200Wx1200H/tivoli.png;$siteResource/1200Wx1200H/tivoli.png;;;images
+;515Wx515H;/515Wx515H/tivoli.png;$siteResource/515Wx515H/tivoli.png;;;images
+;300Wx300H;/300Wx300H/tivoli.png;$siteResource/300Wx300H/tivoli.png;;;images
+;96Wx96H;/96Wx96H/tivoli.png;$siteResource/96Wx96H/tivoli.png;;;images
+;65Wx65H;/65Wx65H/tivoli.png;$siteResource/65Wx65H/tivoli.png;;;images
+;30Wx30H;/30Wx30H/tivoli.png;$siteResource/30Wx30H/tivoli.png;;;images
 
 
 
@@ -252,7 +257,7 @@ INSERT_UPDATE Product;code[unique=true];$catalogVersion;$galleryImages;$picture;
 ;1000;;1000.png;/300Wx300H/newi10.png;/96Wx96H/newi10.png
 ;1001;;1001.png;/300Wx300H/i10.png;/96Wx96H/i10.png
 ;1002;;1002.png;/300Wx300H/DEi20COUPÉ.png;/96Wx96H/DEi20COUPÉ.png
-;1003;;1003.png;/300Wx300H/i20 ACTIVE.png;/96Wx96H/i20 ACTIVE.png
+;1003;;1004.png;/300Wx300H/i20 ACTIVE.png;/96Wx96H/i20 ACTIVE.png
 ;1004;;1004.png;/300Wx300H/i20 ACTIVE.png;/96Wx96H/i20 ACTIVE.png
 ;1005;;1005.png;/300Wx300H/ix20.png;/96Wx96H/ix20.png
 ;1006;;1006.png;/300Wx300H/i30.png;/96Wx96H/i30.png
@@ -261,19 +266,41 @@ INSERT_UPDATE Product;code[unique=true];$catalogVersion;$galleryImages;$picture;
 ;1009;;1009.png;/300Wx300H/IONIQ hybrid.png;/96Wx96H/IONIQ hybrid.png
 ;1010;;1010.png;/300Wx300H/IONIQ electric.png;/96Wx96H/IONIQ electric.png
 ;1011;;1011.png;/300Wx300H/i40Sedan.png;/96Wx96H/i40Sedan.png
+;1012;;1011.png;/300Wx300H/i40Sedan.png;/96Wx96H/i40Sedan.png
 ;1013;;1013.png;/300Wx300H/tuscon.png;/96Wx96H/tuscon.png
 ;1014;;1014.png;/300Wx300H/santafe.png;/96Wx96H/santafe.png
 ;1015;;1015.png;/300Wx300H/grand-santafe.png;/96Wx96H/grand-santafe.png
 ;1016;;1016.png;/300Wx300H/H1-People.png;/96Wx96H/H1-People.png
+;1017;;1016.png;/300Wx300H/H1-People.png;/96Wx96H/H1-People.png
+;1018;;1016.png;/300Wx300H/H1-People.png;/96Wx96H/H1-People.png
+;1019;;1016.png;/300Wx300H/H1-People.png;/96Wx96H/H1-People.png
+;1020;;1016.png;/300Wx300H/H1-People.png;/96Wx96H/H1-People.png
+;1021;;1016.png;/300Wx300H/H1-People.png;/96Wx96H/H1-People.png	
 ;1022;;1022.png;/300Wx300H/H350.png;/96Wx96H/H350.png
 ;1023;;1023.png;/300Wx300H/fuelcell.png;/96Wx96H/fuelcell.png
 ;1024;;1024.png;/300Wx300H/DoubleCab1.png;/96Wx96H/DoubleCab1.png
+;1025;;1024.png;/300Wx300H/DoubleCab1.png;/96Wx96H/DoubleCab1.png
+;1026;;1024.png;/300Wx300H/DoubleCab1.png;/96Wx96H/DoubleCab1.png
+;1027;;1024.png;/300Wx300H/DoubleCab1.png;/96Wx96H/DoubleCab1.png
+;1028;;1024.png;/300Wx300H/DoubleCab1.png;/96Wx96H/DoubleCab1.png
+;1029;;1024.png;/300Wx300H/DoubleCab1.png;/96Wx96H/DoubleCab1.png
+;1030;;1024.png;/300Wx300H/DoubleCab1.png;/96Wx96H/DoubleCab1.png
 ;1031;;1031.png;/300Wx300H/singleCab.png;/96Wx96H/singleCab.png
+;1032;;1031.png;/300Wx300H/singleCab.png;/96Wx96H/singleCab.png
 ;1033;;1033.png;/300Wx300H/extendedCab2.png;/96Wx96H/extendedCab2.png
+;1034;;1033.png;/300Wx300H/extendedCab2.png;/96Wx96H/extendedCab2.png
+;1035;;1033.png;/300Wx300H/extendedCab2.png;/96Wx96H/extendedCab2.png
+;1036;;1033.png;/300Wx300H/tivoli.png;/96Wx96H/tivoli.png
 ;1037;;1037.png;/300Wx300H/xlv.png;/96Wx96H/xlv.png
 ;1038;;1038.png;/300Wx300H/rodius.png;/96Wx96H/rodius.png
 ;1039;;1039.png;/300Wx300H/Rexton.png;/96Wx96H/Rexton.png
 ;1040;;1040.png;/300Wx300H/Actyon.png;/96Wx96H/Actyon.png
+
+
+
+
+
+
 
 
 
