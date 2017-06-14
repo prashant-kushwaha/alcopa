@@ -31,9 +31,11 @@ UPDATE SolrIndexedProperty;solrIndexedType(identifier)[unique=true];name[unique=
  ;$solrIndexedType;price;"Price"
  ;$solrIndexedType;summary;"Summary"
  ;$solrIndexedType;brand;"Brand"
- ;$solrIndexedType;region;"Region"
- ;$solrIndexedType;grape;"Grape"
- ;$solrIndexedType;origincountry;"Country"
+ ;$solrIndexedType;color;"Color"
+ ;$solrIndexedType;version;"Version"
+ ;$solrIndexedType;model;"Model"
+ ;$solrIndexedType;engine;"Engine"
+ ;$solrIndexedType;type;"Type"
 
 # Define the available sorts
 UPDATE SolrSort;indexedType(identifier)[unique=true];code[unique=true];name[lang=$lang]

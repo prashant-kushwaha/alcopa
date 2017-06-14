@@ -1,0 +1,77 @@
+# -----------------------------------------------------------------------
+# [y] hybris Platform
+#
+# Copyright (c) 2017 SAP SE or an SAP affiliate company.  All rights reserved.
+#
+# This software is the confidential and proprietary information of SAP
+# ("Confidential Information"). You shall not disclose such Confidential
+# Information and shall use it only in accordance with the terms of the
+# license agreement you entered into with SAP.
+# -----------------------------------------------------------------------
+# ImpEx for Importing Products stock levels into Powertools Store
+
+# Macros / Replacement Parameter definitions
+$productCatalog=powertoolsProductCatalog
+$productCatalogName=Powertools Product Catalog
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+$vendor=powertools
+
+INSERT_UPDATE Warehouse;code[unique=true];name;vendor(code)[default=default];default[default=true];
+;warehousealcopa;alcopa warehouse;;;
+
+INSERT_UPDATE StockLevel;productCode[unique=true];warehouse(code)[default='warehousealcopa',unique=true];available;inStockStatus(code)[default='notSpecified'];
+;1000;;50;;
+;1001;;50;;
+;1002;;50;;
+;1003;;50;;
+;1004;;50;;
+;1005;;50;;
+;1006;;50;;
+;1007;;50;;
+;1008;;50;;
+;1009;;50;;
+;1010;;50;;
+;1011;;50;;
+;1012;;50;;
+;1013;;50;;
+;1014;;50;;
+;1015;;50;;
+;1016;;50;;
+;1017;;50;;
+;1018;;50;;
+;1019;;50;;
+;1020;;50;;
+;1021;;50;;
+;1022;;50;;
+;1023;;50;;
+;1024;;50;;
+;1025;;50;;
+;1026;;50;;
+;1027;;50;;
+;1028;;50;;
+;1029;;50;;
+;1030;;50;;
+;1031;;50;;
+;1032;;50;;
+;1033;;50;;
+;1034;;50;;
+;1035;;50;;
+;1036;;50;;
+;1037;;50;;
+;1038;;50;;
+;1039;;50;;
+;1040;;50;;
+
+
+INSERT_UPDATE AtpFormula;code[unique=true];availability;allocation;cancellation;increase;reserved;shrinkage;wastage;returned
+;Default_Formula;true;false;true;true;false;false;false;true
+
+UPDATE BaseStore;uid[unique=true];defaultAtpFormula(code);
+;powertools;Default_Formula;
+
+# Adds a default Sourcing Config
+INSERT_UPDATE SourcingConfig;code[unique=true];distanceWeightFactor;allocationWeightFactor;priorityWeightFactor;scoreWeightFactor
+;Hybris_OMS_Config;50;30;20;0
+
+UPDATE BaseStore;uid[unique=true];sourcingConfig(code);
+;powertools;Hybris_OMS_Config;
