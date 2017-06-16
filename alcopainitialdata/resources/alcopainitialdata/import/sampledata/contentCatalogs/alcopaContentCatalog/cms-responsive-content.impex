@@ -933,9 +933,9 @@ INSERT_UPDATE FooterComponent;$contentCV[unique=true];uid[unique=true];wrapAfter
 
 ###  Home page splash Slot 1  #######
 INSERT_UPDATE SimpleResponsiveBannerComponent;$contentCV[unique=true];uid[unique=true];name;urlLink;&componentRef
-;;WineGaloreBannerResponsive;Wine Galore Banner;/c/100/;WineGaloreBannerResponsive;
-;;WhiskyGaloreBannerResponsive;Whisky Galore Banner;/c/200/;WhiskyGaloreBannerResponsive
-;;PlattersGaloreBannerResponsive;Platters Galore Banner;/c/300/;PlattersGaloreBannerResponsive
+;;WineGaloreBannerResponsive;Hyundai Banner;/c/100/;WineGaloreBannerResponsive;
+;;WhiskyGaloreBannerResponsive;Isuzu Banner;/c/200/;WhiskyGaloreBannerResponsive
+;;PlattersGaloreBannerResponsive;SsangYong Banner;/c/300/;PlattersGaloreBannerResponsive
 ;;BasketsGaloreBannerResponsive;Baskets Galore Banner;;BasketsGaloreBannerResponsive
 ;;AuctionWineGaloreBannerResponsive;Auction Wine Galore Banner;;AuctionWineGaloreBannerResponsive
 

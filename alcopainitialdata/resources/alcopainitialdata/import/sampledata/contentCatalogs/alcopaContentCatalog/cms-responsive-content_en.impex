@@ -351,23 +351,23 @@ UPDATE SimpleBannerComponent;$contentCV[unique=true];uid[unique=true];$picture[l
 
 ##### Section 1
 INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator][forceWrite=true];realfilename;altText;mime[default='image/jpeg'];$contentCV[unique=true];folder(qualifier)[default=images];
-;mobile;wine_mobile.jpg;$siteResource/images/banners/category/responsive/shoprite/hyundai_mobile.jpg;wine_mobile.jpg;"Hyundai"
-;tablet;wine_tablet.jpg;$siteResource/images/banners/category/responsive/shoprite/hyundai_tablet.jpg;wine_tablet.jpg;"Hyundai"
-;desktop;wine_desktop.jpg;$siteResource/images/banners/category/responsive/shoprite/hyundai_desktop.jpg;wine_desktop.jpg;"Hyundai"
+;mobile;hyundai_mobile.jpg;$siteResource/images/banners/category/responsive/shoprite/hyundai_mobile.jpg;hyundai_mobile.jpg;"Hyundai"
+;tablet;hyundai_tablet.jpg;$siteResource/images/banners/category/responsive/shoprite/hyundai_tablet.jpg;hyundai_tablet.jpg;"Hyundai"
+;desktop;hyundai_desktop.jpg;$siteResource/images/banners/category/responsive/shoprite/hyundai_desktop.jpg;hyundai_desktop.jpg;"Hyundai"
 
-;mobile;whisky_mobile.jpg;$siteResource/images/banners/category/responsive/shoprite/isuzu_mobile.jpg;whisky_mobile.jpg;"Isuzu"
-;tablet;whisky_tablet.jpg;$siteResource/images/banners/category/responsive/shoprite/isuzu_tablet.jpg;whisky_tablet.jpg;"Isuzu"
-;desktop;whisky_desktop.jpg;$siteResource/images/banners/category/responsive/shoprite/isuzu_desktop.jpg;whisky_desktop.jpg;"Isuzu"
+;mobile;isuzu_mobile.jpg;$siteResource/images/banners/category/responsive/shoprite/isuzu_mobile.jpg;isuzu_mobile.jpg;"Isuzu"
+;tablet;isuzu_tablet.jpg;$siteResource/images/banners/category/responsive/shoprite/isuzu_tablet.jpg;isuzu_tablet.jpg;"Isuzu"
+;desktop;isuzu_desktop.jpg;$siteResource/images/banners/category/responsive/shoprite/isuzu_desktop.jpg;isuzu_desktop.jpg;"Isuzu"
 
 ;mobile;baskets_mobile.jpg;$siteResource/images/banners/category/responsive/shoprite/baskets_mobile.jpg;baskets_mobile.jpg;"Order baskets"
 ;tablet;baskets_tablet.jpg;$siteResource/images/banners/category/responsive/shoprite/baskets_tablet.jpg;baskets_tablet.jpg;"Order baskets"
 ;desktop;baskets_desktop.jpg;$siteResource/images/banners/category/responsive/shoprite/baskets_desktop.jpg;baskets_desktop.jpg;"Order baskets"
 
-;mobile;platters_mobile.jpg;$siteResource/images/banners/category/responsive/shoprite/ssangyong_mobile.jpg;platters_mobile.jpg;"Ssangyong"
-;tablet;platters_tablet.jpg;$siteResource/images/banners/category/responsive/shoprite/ssangyong_tablet.jpg;platters_tablet.jpg;"Ssangyong"
-;desktop;platters_desktop.jpg;$siteResource/images/banners/category/responsive/shoprite/ssangyong_desktop.jpg;platters_desktop.jpg;"Ssangyong"
+;mobile;ssangyong_mobile.jpg;$siteResource/images/banners/category/responsive/shoprite/ssangyong_mobile.jpg;ssangyong_mobile.jpg;"Ssangyong"
+;tablet;ssangyong_tablet.jpg;$siteResource/images/banners/category/responsive/shoprite/ssangyong_tablet.jpg;ssangyong_tablet.jpg;"Ssangyong"
+;desktop;ssangyong_desktop.jpg;$siteResource/images/banners/category/responsive/shoprite/ssangyong_desktop.jpg;ssangyong_desktop.jpg;"Ssangyong"
 
-;mobile;auction_wine_mobile.jpg;$siteResource/images/banners/category/responsive/shoprite/auction_wine_mobile.jpg;auction_wine_mobile.jpg;"Order Auction Wine"
+;mobile;auction_hyundai_tablet.jpg;$siteResource/images/banners/category/responsive/shoprite/auction_wine_mobile.jpg;auction_wine_mobile.jpg;"Order Auction Wine"
 ;tablet;auction_wine_tablet.jpg;$siteResource/images/banners/category/responsive/shoprite/auction_wine_tablet.jpg;auction_wine_tablet.jpg;"Order Auction Wine"
 ;desktop;auction_wine_desktop.jpg;$siteResource/images/banners/category/responsive/shoprite/auction_wine_desktop.jpg;auction_wine_desktop.jpg;"Order Auction Wine"
 
@@ -380,19 +380,19 @@ INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];@media[translator=d
 ;desktop;plp_platters_desktop.jpg;$siteResource/images/banners/category/responsive/shoprite/plp_platters_desktop.jpg;plp_platters_desktop.jpg;"Order platters"
 
 INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$contentCV[unique=true]
-;shoprite-wine-en;wine_mobile.jpg,wine_tablet.jpg,wine_desktop.jpg
-;shoprite-whisky-en;whisky_mobile.jpg,whisky_tablet.jpg,whisky_desktop.jpg
+;alcopa-hyundai-en;hyundai_mobile.jpg,hyundai_tablet.jpg,hyundai_desktop.jpg
+;alcopa-issuzu-en;isuzu_mobile.jpg,isuzu_tablet.jpg,isuzu_desktop.jpg
 ;shoprite-baskets-en;baskets_mobile.jpg,baskets_tablet.jpg,baskets_desktop.jpg
-;shoprite-platters-en;platters_mobile.jpg,platters_tablet.jpg,platters_desktop.jpg
+;alcopa-ssangyong-en;ssangyong_mobile.jpg,ssangyong_tablet.jpg,ssangyong_desktop.jpg
 ;shoprite-auction-wine-en;auction_wine_mobile.jpg,auction_wine_tablet.jpg,auction_wine_desktop.jpg
 
 ;shoprite-plp_baskets-en;plp_baskets_mobile.jpg,plp_baskets_tablet.jpg,plp_baskets_desktop.jpg
 ;shoprite-plp_platters-en;plp_platters_mobile.jpg,plp_platters_tablet.jpg,plp_platters_desktop.jpg
 
 INSERT_UPDATE SimpleResponsiveBannerComponent;$contentCV[unique=true];uid[unique=true];$mediaContainer
-;;WineGaloreBannerResponsive;shoprite-wine-en
-;;WhiskyGaloreBannerResponsive;shoprite-whisky-en
-;;PlattersGaloreBannerResponsive;shoprite-platters-en
+;;WineGaloreBannerResponsive;alcopa-hyundai-en
+;;WhiskyGaloreBannerResponsive;alcopa-issuzu-en
+;;PlattersGaloreBannerResponsive;alcopa-ssangyong-en
 ;;BasketsGaloreBannerResponsive;shoprite-baskets-en
 ;;AuctionWineGaloreBannerResponsive;shoprite-auction-wine-en
 
