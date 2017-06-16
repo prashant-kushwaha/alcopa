@@ -17,4 +17,4 @@ $lang=en
 
 # Create Content Catalog
 UPDATE ContentCatalog;id[unique=true];name[lang=$lang]
- ;powertoolsContentCatalog;"Powertools Content Catalog"
+ ;powertoolsContentCatalog;"AlcopaB2B Content Catalog"

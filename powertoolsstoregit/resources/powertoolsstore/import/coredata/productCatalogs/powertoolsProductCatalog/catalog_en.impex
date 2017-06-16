@@ -19,4 +19,4 @@ $lang=en
 $productCatalog=powertoolsProductCatalog
 
 UPDATE Catalog;id[unique=true];name[lang=$lang]
-;$productCatalog;"Powertools Product Catalog";
+;$productCatalog;"AlcopaB2B Product Catalog";

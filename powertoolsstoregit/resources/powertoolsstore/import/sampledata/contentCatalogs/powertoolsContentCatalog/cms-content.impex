@@ -12,7 +12,7 @@ $contentCatalog=powertoolsContentCatalog
 $contentCatalogName=Powertools Content Catalog
 $contentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCatalog]),CatalogVersion.version[default=Staged])[default=$contentCatalog:Staged]
 $productCatalog=powertoolsProductCatalog
-$productCatalogName=Powertools Product Catalog
+$productCatalogName=AlcopaB2B Product Catalog
 $productCV=catalogVersion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
 $picture=media(code, $contentCV);
 $image=image(code, $contentCV);
@@ -31,7 +31,7 @@ $siteUid=powertools
 
 # CMS Site Settings
 UPDATE CMSSite;uid[unique=true];defaultPreviewCategory(code, $productCV);defaultPreviewProduct(code, $productCV);theme(code)
-;$siteUid;1355;2116282;lambda
+;$siteUid;100;1001;lambda
 
 ###### Navigation Start ######
 ## navigation is in tree structure ##

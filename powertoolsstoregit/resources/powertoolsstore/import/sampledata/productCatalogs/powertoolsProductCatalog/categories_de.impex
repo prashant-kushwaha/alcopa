@@ -13,7 +13,7 @@
 
 # Macros / Replacement Parameter definitions
 $productCatalog=powertoolsProductCatalog
-$productCatalogName=Powertools Product Catalog
+$productCatalogName=AlcopaB2B Product Catalog
 $catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
 
 $lang=de

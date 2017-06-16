@@ -34,7 +34,7 @@ $storefrontContextRoot=$config-storefrontContextRoot
 
 # CMS Site
 INSERT_UPDATE CMSSite;uid[unique=true];theme(code);channel(code);stores(uid);contentCatalogs(id);defaultCatalog(id);defaultLanguage(isoCode);urlPatterns;active;previewURL;startingPage(uid,$contentCV);urlEncodingAttributes;defaultPromotionGroup(Identifier)[default=powertoolsPromoGrp]
-;$siteUid;lambda;B2B;$storeUid;$contentCatalog;$productCatalog;$defaultLanguage;(?i)^https?://[^/]+(/[^?]*)?\?(.*\&)?(site=$siteUid)(|\&.*)$,(?i)^https?://$siteUid\.[^/]+(|/.*|\?.*)$;true;$storefrontContextRoot/?site=$siteUid;homepage;storefront,language,currency
+;$siteUid;lambda;B2B;$storeUid;$contentCatalog;$productCatalog;$defaultLanguage;(?i)^https?://[^/]+(/[^?]*)?\?(.*\&)?(site=$alcopab2b)(|\&.*)$,(?i)^https?://alcopab2b\.[^/]+(|/.*|\?.*)$;true;$storefrontContextRoot/?site=$siteUid;homepage;storefront,language,currency
 
 # SiteMap Configuration
 # SiteMap Language Currencies

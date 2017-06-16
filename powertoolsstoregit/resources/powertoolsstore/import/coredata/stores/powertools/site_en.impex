@@ -17,4 +17,4 @@ $lang=en
 
 # Create CMS Site
 UPDATE CMSSite;uid[unique=true];name[lang=$lang];locale[lang=$lang]
- ;powertools;"Powertools Site";en_GB
+ ;powertools;"AlcopaB2B Site";en_GB
